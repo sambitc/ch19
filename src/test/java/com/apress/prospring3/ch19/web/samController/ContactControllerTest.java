@@ -143,7 +143,7 @@ public class ContactControllerTest extends AbstractControllerTest {
 	
 	@Test
 	public void testDownloadPhoto() throws Exception { 
-		ResultActions actions = this.mockMvc.perform(get("/photo/1")
+		ResultActions actions = this.mockMvc.perform(get("/contacts/photo/1")
 				); 
 		assertEquals("", actions.andReturn().getResponse().getContentAsString());
 	}
